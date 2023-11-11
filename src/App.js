@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { Admin, Resource} from 'react-admin'
+import restProvider from 'ra-data-simple-rest'
+import PostList from './components/PostList.js'
+import PostCreate from './components/PostCreate.js'
+import PostEdit from './components/PostEdit.js'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Admin dataProvider={restProvider('http://localhost:3000')}>
+    <Resource name='posts' list={PostList} create={PostCreate} edit={PostEdit}></Resource>
+  </Admin>;
 }
 
 export default App;
