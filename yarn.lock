@@ -5412,6 +5412,11 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
+graphql-ast-types-browser@~1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/graphql-ast-types-browser/-/graphql-ast-types-browser-1.0.2.tgz#474305af7e76f9692df6e50a88fb668ce258c4a4"
+  integrity sha512-QuKZ+Et3dE7SyO5c41eNPlJc7+HwQxOzHfmIhqzj4cUgAGyhSwVkKb7K24zom8y6y0VnG7Xb3RRypjIVvfIevQ==
+
 graphql-tag@^2.12.6:
   version "2.12.6"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.12.6.tgz#d441a569c1d2537ef10ca3d1633b48725329b5f1"
@@ -8382,6 +8387,17 @@ ra-core@^4.15.4:
     react-is "^17.0.2"
     react-query "^3.32.1"
 
+ra-data-graphql-simple@^4.15.2:
+  version "4.15.2"
+  resolved "https://registry.yarnpkg.com/ra-data-graphql-simple/-/ra-data-graphql-simple-4.15.2.tgz#6b46692f5124c566eac7484978d968724f7d8c08"
+  integrity sha512-UvMUALre7QjBlfW6h+v1WC2vbpUFA3iP++KSXKCXG/sVYOs9Zu+kJbSYLMO0BSlT4kqG+6UvETdNnKPntAS8nQ==
+  dependencies:
+    "@apollo/client" "^3.3.19"
+    graphql-ast-types-browser "~1.0.2"
+    lodash "~4.17.5"
+    pluralize "~7.0.0"
+    ra-data-graphql "^4.14.3"
+
 ra-data-graphql@^4.14.3:
   version "4.14.3"
   resolved "https://registry.yarnpkg.com/ra-data-graphql/-/ra-data-graphql-4.14.3.tgz#0b511b7f329770a47dd4ba742039ad7738547a18"
@@ -8390,13 +8406,6 @@ ra-data-graphql@^4.14.3:
     "@apollo/client" "^3.3.19"
     lodash "~4.17.5"
     pluralize "~7.0.0"
-
-ra-data-simple-rest@^4.15.4:
-  version "4.15.4"
-  resolved "https://registry.yarnpkg.com/ra-data-simple-rest/-/ra-data-simple-rest-4.15.4.tgz#52ca77fbc0596af8ddb8f7d7133a85738ea70d9f"
-  integrity sha512-CKPZL62CbGhZPZDhBxYSNgL39NIj9lJCfHiuQjebxxmblBrKrnB3B2xPNcQaUdKQdi2/YYFeoty2FOFPunuEnQ==
-  dependencies:
-    query-string "^7.1.1"
 
 ra-i18n-polyglot@^4.15.4:
   version "4.15.4"
